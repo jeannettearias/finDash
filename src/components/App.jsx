@@ -2,8 +2,6 @@ import '../styles/App.scss';
 import Header from './layout/Header';
 import React from 'react';
 
-
-
 function App() {
   return (
     <>
