@@ -5,11 +5,25 @@ function Header() {
         <>
             <header className="header">
                 <section className='top-bar'>
-                    <div>
-                        <h1>Dashboard</h1>
+                    <div className='logo'>
+                        <h1
+                            className='logo__title'
+                        >Dashboard</h1>
                     </div>
-                    <div>
-                        <time datetime="2023-10-01T12:00:00Z">12:00 PM</time>
+                    <div
+                        className='datetime__container'
+                    >
+                        <input
+                            className='datetime__input'
+                            type="text"
+                            name="date"
+                            id="date"
+                            placeholder='May 2025'
+                        ></input>
+                        <img
+                            className='calendar__icon'
+                            src="/public/images/calendar.svg" alt="" />
+
                     </div>
                 </section>
                 <section className='side-bar'>

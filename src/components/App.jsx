@@ -7,12 +7,9 @@ function App() {
     <>
       <main>
         <section className='dashboard'>
-
           <Header />
-          <div className='dashboard__content'>
-            <h1>Dashboard</h1>
-            <p>Welcome to the dashboard!</p>
-          </div>
+        </section>
+        <section className='content'>
 
         </section>
       </main>

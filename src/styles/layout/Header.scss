@@ -1,13 +1,56 @@
+:root {
+  background: rgb(83, 0, 128);
+}
+
 .top-bar {
   display: flex;
   width: 1203px;
   padding: 20px 32px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.datetime__container {
+  display: flex;
+  width: 216px;
+  padding: var(--Spacing-sm, 12px) var(--Spacing-m, 16px);
   justify-content: space-between;
   align-items: center;
 
-  color: #fff;
+  border-radius: var(--Radius-m, 16px);
+  border: 1px solid var(--Neutrals-Neutrals200, #cccbcb);
+  background: var(--Base-Base-White, #fafafa);
 }
 
+.datetime__input {
+  /* Dashboard - 1 - luo777ne/Desktop/Body/Content Regular */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.logo__title {
+  color: var(--Neutrals-Neutrals700, #f1eded);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+
+.calendar__icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+////side bar ////////////
 .side-bar {
   display: flex;
   width: 237px;
@@ -16,7 +59,13 @@
   flex-direction: column;
   align-items: center;
   gap: 47px;
+  list-style: none;
 
-  border-right: 1px solid var(--Secondary-Secondary200, #dae1e7);
-  background: #fff;
+  color: #f1eded;
+  border-right: 0.5px solid var(--Secondary-Secondary200, #ecbcef);
+  background: #d1b6ed06;
+  /* Added box-shadow for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Added padding for better spacing */
+  padding: 20px;
 }
