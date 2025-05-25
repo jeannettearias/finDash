@@ -1,9 +1,18 @@
 import '../styles/App.scss';
+import Header from './layout/Header';
+import React from 'react';
 
 function App() {
   return (
     <>
-      Aquí va tu HTML
+      <main>
+        <section className='dashboard'>
+          <Header />
+        </section>
+        <section className='content'>
+
+        </section>
+      </main>
     </>
   )
 }
