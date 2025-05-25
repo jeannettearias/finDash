@@ -5,7 +5,10 @@ function Header() {
         <>
             <header className="header">
                 <section className='top-bar'>
-                    <div className='logo'>
+                    <div className='logo__container'>
+                        <img
+                            className='logo__side__bar'
+                            src="/images/Logo-temp.svg" alt="" />
                         <h1
                             className='logo__title'
                         >Dashboard</h1>
@@ -22,8 +25,15 @@ function Header() {
                         ></input>
                         <img
                             className='calendar__icon'
-                            src="/public/images/calendar.svg" alt="" />
+                            src="/images/calendar.svg" alt="" />
 
+                    </div >
+                    <div className='search__container'>
+                        <input className='inputSearch'
+                            type="text" placeholder='search' />
+                        <img
+                            className='search__icon'
+                            src="/images/basil_search-outline.svg" alt="" />
                     </div>
                 </section>
                 <section className='side-bar'>
