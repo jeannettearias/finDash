@@ -1,17 +1,22 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
+import Dashboard from './dashboards/Dashboard';
 import React from 'react';
 
 function App() {
   return (
     <>
       <main>
-        <section className='dashboard'>
+        <section className='header'>
           <Header />
         </section>
-        <section className='content'>
-
+        <section>
+          <Dashboard />
         </section>
+        <section className='footer'>
+          {/* Footer content goes here */}
+        </section>
+
       </main>
     </>
   )

@@ -5,14 +5,6 @@ function Header() {
         <>
             <header className="header">
                 <section className='top-bar'>
-                    <div className='logo__container'>
-                        <img
-                            className='logo__side__bar'
-                            src="/images/Logo-temp.svg" alt="" />
-                        <h1
-                            className='logo__title'
-                        >Dashboard</h1>
-                    </div>
                     <div
                         className='datetime__container'
                     >
@@ -37,18 +29,29 @@ function Header() {
                     </div>
                 </section>
                 <section className='side-bar'>
-                    <h2>Menu</h2>
-                    <ul>
-                        <li>Dashboard</li>
-                        <li>Notifications</li>
-                        <li>Wallets</li>
-                    </ul>
-
-                    <h2>Support</h2>
-                    <ul>
-                        <li>Settings</li>
-                        <li>Help</li>
-                    </ul>
+                    <div className='logo__container'>
+                        <img
+                            className='logo__side__bar'
+                            src="/images/Logo-temp.svg" alt="" />
+                        <h1
+                            className='logo__title'
+                        >Dashboard</h1>
+                    </div>
+                    <div>
+                        <h2 className='menu__title'>Menu</h2>
+                        <ul>
+                            <li>Dashboard</li>
+                            <li>Notifications</li>
+                            <li>Wallets</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Support</h2>
+                        <ul>
+                            <li>Settings</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
                 </section>
             </header>
         </>
