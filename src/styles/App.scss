@@ -1,2 +1,9 @@
-@import './core/reset';
-@import './core/variables';
+@import "./core/reset";
+@import "./core/variables";
+
+.main-container {
+  width: 1440px;
+  height: 1506px;
+
+  background: #e5ecf3;
+}

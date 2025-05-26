@@ -6,16 +6,11 @@ import React from 'react';
 function App() {
   return (
     <>
-      <main>
-        <section className='header'>
-          <Header />
-        </section>
-        <section>
+      <main className='main-container'>
+        <Header />
+        <body>
           <Dashboard />
-        </section>
-        <section className='footer'>
-          {/* Footer content goes here */}
-        </section>
+        </body>
 
       </main>
     </>

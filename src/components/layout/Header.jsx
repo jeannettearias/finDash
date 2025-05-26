@@ -3,8 +3,16 @@ import '../../styles/layout/Header.scss';
 function Header() {
     return (
         <>
-            <header className="header">
+            <header className='header'>
                 <section className='top-bar'>
+                    <div className='logo__container'>
+                        <img
+                            className='logo__side__bar'
+                            src="/images/Logo-temp.svg" alt="" />
+                        <h1
+                            className='logo__title'
+                        >Dashboard</h1>
+                    </div>
                     <div
                         className='datetime__container'
                     >
@@ -28,14 +36,7 @@ function Header() {
                     </div>
                 </section>
                 <section className='side-bar'>
-                    <div className='logo__container'>
-                        <img
-                            className='logo__side__bar'
-                            src="/images/Logo-temp.svg" alt="" />
-                        <h1
-                            className='logo__title'
-                        >Dashboard</h1>
-                    </div>
+
                     <div className='menu-support__container'>
                         <div className='menu__container'>
                             <h2 className='menu__title'>Menu</h2>
