@@ -7,3 +7,18 @@
 
   background: #e5ecf3;
 }
+
+.bar {
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.body {
+  display: flex;
+  width: 1203px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}

@@ -2,25 +2,24 @@ import '../styles/App.scss';
 import Header from './layout/Header';
 import Dashboard from './dashboards/dashboard';
 import SideBar from './layout/SIdeBar';
-import Footer from './layout/Footer';
+
 import React from 'react';
 
 
 function App() {
   return (
     <main className='main'>
-      <Header />
 
-      <div className='side-bar-container'>
+      <section className='bar'>
         <SideBar />
-      </div>
-      <div className='dashboard-container'>
+        <Header />
+      </section>
+
+      <section className='dashboard-container'>
         <Dashboard />
-      </div>
+      </section>
 
-      <Footer />
     </main>
-
   )
 }
 export default App;
