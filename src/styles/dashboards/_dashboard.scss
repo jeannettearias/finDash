@@ -1,0 +1,142 @@
+.body_container {
+  display: flex;
+  width: 1203px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.persons-cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.down {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  align-self: stretch;
+}
+
+.a__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.card__chart {
+  display: flex;
+  width: 362px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  border-radius: 16px;
+}
+
+.card__categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+  border-radius: 24px;
+  background: #fff;
+}
+
+.a__header {
+  display: flex;
+  padding: 12px 8px 12px 24px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+
+  border-bottom: 1px solid var(--Secondary-Secondary300, #ced7de);
+}
+
+.a__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.a__title {
+  color: var(--Foreground-Medium, #404040);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.card__content {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.categories__chart {
+  width: 208px;
+  height: 192px;
+}
+
+.categories__legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.category__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  gap: 8px;
+
+  color: #4a5e6d;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14.326px; /* 89.535% */
+}
+
+.categories__btn {
+  display: flex;
+  height: 44px;
+  min-height: 44px;
+  padding: var(--Spacing-sm, 12px) var(--Spacing-ml, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-s, 8px);
+
+  border-radius: var(--Radius-m, 16px);
+  border: 1px solid var(--Primary-Primary, #8534fe);
+
+  color: var(--Primary-Primary800, #4b01b9);
+  /* Dashboard - 1 - luo777ne/Desktop/Body/Content Accent */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
