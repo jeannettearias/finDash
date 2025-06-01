@@ -9,7 +9,7 @@ function App() {
   return (
     <main className='main'>
 
-      <section className='bar'>
+      <section className='header'>
 
         <Header />
       </section>
