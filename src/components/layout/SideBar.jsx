@@ -4,7 +4,7 @@ import '../../styles/layout/_sideBar.scss';
 function SideBar() {
     return (
         <>
-            <section className='side-bar'>
+            <div className='side-bar'>
 
                 <div className='menu-support__container'>
                     <div className='menu__container'>
@@ -23,7 +23,7 @@ function SideBar() {
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
