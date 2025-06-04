@@ -20,6 +20,7 @@ function App() {
         <section className='dashboard'>
           <Dashboard />
         </section>
+
       </section>
 
     </main>
