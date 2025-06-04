@@ -5,7 +5,7 @@ import '../../styles/dashboards/_dashboard.scss';
 function Dashboard() {
     return (
         <>
-            <section className='persons-cards'>
+            <section className='cards'>
                 <Cards />
             </section>
 

@@ -3,7 +3,7 @@ import '../../styles/layout/_header.scss';
 function Header() {
     return (
         <>
-            <div className='header'>
+            <section className='header'>
                 <div className='logo__container'>
                     <img className='logo__side__bar'
                         src="/images/Logo-temp.svg" alt="" />
@@ -29,7 +29,7 @@ function Header() {
                         className='search__icon'
                         src="/images/basil_search-outline.svg" alt="" />
                 </div>
-            </div>
+            </section>
         </>
     )
 }
