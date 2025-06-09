@@ -20,10 +20,26 @@ function Cards() {
                 <div className='card-current-money'>
 
                 </div>
-                <div className='card-money'>
-
+                <div className='card-money1'>
+                    <div className='content-card-money'>
+                        <p className='card-text1'>Monthly incomes</p>
+                        <p className='card-text2'>1500€</p>
+                    </div>
+                    <p className='card-text3'>+4% previous 28 days</p>
+                    <img
+                        className='card-graphic'
+                        src="./images/card-user/card-money/person/Card/graphic.svg" alt="" />
                 </div>
-
+                <div className='card-money2'>
+                    <div className='content-card-money'>
+                        <p className='card2-text1'>Monthly spendings</p>
+                        <p className='card2-text2'>-350€</p>
+                    </div>
+                    <p className='card2-text3'>-25% previous 07 days</p>
+                    <img
+                        className='card-graphic'
+                        src="./images/card-user/card-money/spents/person/Card/graphic.svg" alt="" />
+                </div>
             </div>
         </>
     )

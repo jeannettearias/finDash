@@ -88,3 +88,116 @@
 
   border-radius: var(--Spacing-m, 16px);
 }
+
+.card-money1 {
+  display: flex;
+  width: 200px;
+  height: 209px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  border-radius: var(--Spacing-m, 16px);
+  background: #fff;
+}
+
+.content-card-money {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.card-text1 {
+  align-self: stretch;
+
+  color: var(--Secondary-Secondary1000, #323f49);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #323f49;
+}
+
+.card-text2 {
+  align-self: stretch;
+
+  color: var(--Secondary-Secondary1000, #323f49);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #323f49;
+}
+
+.card-text3 {
+  align-self: stretch;
+
+  color: var(--Success-Success300, #0b7b69);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-graphic {
+  width: 82px;
+  height: 82px;
+}
+
+.card-money2 {
+  display: flex;
+  width: 200px;
+  height: 209px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  border-radius: var(--Spacing-m, 16px);
+  background: #fff;
+}
+
+.card2-text1 {
+  align-self: stretch;
+
+  color: var(--Secondary-Secondary1000, #323f49);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card2-text2 {
+  align-self: stretch;
+
+  color: var(--Secondary-Secondary1000, #323f49);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #323f49;
+}
+
+.card2-text3 {
+  align-self: stretch;
+
+  color: var(--Error-Error200, #c03744);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
