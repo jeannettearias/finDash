@@ -1,5 +1,8 @@
 {
-  "name": "modulo-3-leccion-01-primera-web",
+  "name": "financial-dashboard",
+  "homepage": "https://jeannettearias.github.io/finDash",
+  "author": "Jeannette Arias",
+  "description": "A financial dashboard built with React and Vite, showcasing financial data visualization.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,6 +26,7 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.3.0",
     "sass": "^1.77.8",
     "vite": "^6.3.5"
   }
