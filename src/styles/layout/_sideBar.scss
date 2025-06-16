@@ -12,26 +12,6 @@
   background: #fff;
 }
 
-.logo__container {
-  display: flex;
-  align-items: flex-end;
-  gap: 5px;
-}
-
-.logo__side__bar {
-  width: 45px;
-  height: 35px;
-}
-
-.logo__title {
-  color: var(--Primary-Primary, #8534fe);
-  font-family: Audiowide;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 33.739px */
-}
-
 .menu-support__container {
   display: flex;
   flex-direction: column;
