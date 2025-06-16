@@ -4,15 +4,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 1440px;
+  height: 1506px;
 
   background: #e5ecf3;
-}
-
-.header {
-  display: flex;
-  align-items: flex-start;
 }
 
 .content {
@@ -20,17 +15,12 @@
   flex: 1;
 }
 
-.content .side-bar {
-  width: 250px;
-}
-
 .dashboard {
   display: flex;
-  width: 1334px;
-  height: 1298px;
+  width: 100%;
+  height: 100vh;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  flex-shrink: 0;
 }
