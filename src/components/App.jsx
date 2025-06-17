@@ -10,8 +10,8 @@ function App() {
     <main className='main'>
 
       <section className='header'>
-
         <Header />
+
       </section>
 
       <section className='content'>
@@ -21,7 +21,6 @@ function App() {
           <Dashboard />
 
         </section>
-
       </section>
 
     </main>
