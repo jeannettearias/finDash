@@ -4,11 +4,7 @@ function Header() {
     return (
         <>
             <section className='header'>
-                <div className='logo__container'>
-                    <img className='logo__side__bar'
-                        src="./images/Logo-temp.svg" alt="" />
-                    <h1 className='logo__title'>FinDash</h1>
-                </div>
+
                 <div className='datetime__container'>
                     <p className='datetime__title'>Dashboard</p>
                     <div className='input__datepicker'>

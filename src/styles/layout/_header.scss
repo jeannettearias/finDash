@@ -1,37 +1,8 @@
-.header {
-  display: flex;
-  width: 1440px;
-  padding: 20px 32px;
-  justify-content: space-between;
-  align-self: flex-end;
-
-  background: #fff;
-}
-
-.logo__container {
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  gap: 5px;
-}
-
-.logo__side__bar {
-  width: 45px;
-  height: 35px;
-}
-
-.logo__title {
-  color: var(--Primary-Primary, #8534fe);
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 33.739px */
-}
-
 .datetime__container {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex: 1 0 0;
 }
 
 .datetime__title {

@@ -5,6 +5,11 @@ function SideBar() {
     return (
         <>
             <div className='side-bar'>
+                <div className='logo__container'>
+                    <img className='logo__side__bar'
+                        src="./images/Logo-temp.svg" alt="" />
+                    <h1 className='logo__title'>FinDash</h1>
+                </div>
 
                 <div className='menu-support__container'>
                     <div className='menu__container'>

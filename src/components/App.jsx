@@ -1,30 +1,40 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
-import Dashboard from './dashboards/dashboard';
 import SideBar from './layout/SIdeBar';
+import Body from './body/body';
 import React from 'react';
 
 
 function App() {
   return (
-    <main className='main'>
+    <main className="Dashboard">
 
-      <section className='header'>
-
-        <Header />
-      </section>
-
-      <section className='content'>
+      <aside className="side-bar">
         <SideBar />
+      </aside>
 
-        <section className='dashboard'>
-          <Dashboard />
+      <section className="main-content">
+        <header className="header">
+          <Header />
+        </header>
 
+        <section className="body">
+          <Body />
         </section>
-
       </section>
-
     </main>
+
+
   )
 }
 export default App;
+
+// Layout structure for the application
+/*
++----------------+----------------------------+
+|                |          Header            |
+|   SideBar      +----------------------------+
+|                |          Body              |
++----------------+----------------------------+
+*/
+
