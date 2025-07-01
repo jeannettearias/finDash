@@ -1,8 +1,8 @@
 
 import Cards from './Cards';
-import '../../styles/dashboards/_dashboard.scss';
+import '../../styles/body/_body.scss';
 
-function Dashboard() {
+function Body() {
     return (
         <>
             <section className='cards'>
@@ -45,4 +45,4 @@ function Dashboard() {
     )
 }
 
-export default Dashboard;
+export default Body;

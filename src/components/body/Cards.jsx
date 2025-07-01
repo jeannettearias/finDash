@@ -1,4 +1,4 @@
-import '../../styles/dashboards/_cards.scss';
+import '../../styles/body/_cards.scss';
 
 function Cards() {
     return (
