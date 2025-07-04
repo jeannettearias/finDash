@@ -6,6 +6,41 @@ import React from 'react';
 
 
 function App() {
+  // CONECT TO THE BACKEND API/JSON HERE
+
+  ///////////////////// data definition ////////////////////
+  // cards
+  const cards = [
+    {
+      id: 1,
+      title: "Card 1",
+      description: "Description for Card 1",
+    },
+    {
+      id: 2,
+      title: "Card 2",
+      description: "Description for Card 2",
+    },
+    {
+      id: 3,
+      title: "Card 3",
+      description: "Description for Card 3",
+    },
+  ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <main className="Dashboard">
 
@@ -37,4 +72,13 @@ export default App;
 |                |          Body              |
 +----------------+----------------------------+
 */
+
+///////////////////// data definition ////////////////////
+// cards
+// transactions movements
+// categories
+// wallets
+// users
+// notifications
+//////////////////////////////////////////////////////////
 
