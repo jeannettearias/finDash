@@ -3,45 +3,36 @@ import Header from './layout/Header';
 import SideBar from './layout/SIdeBar';
 import Body from './body/body';
 import React from 'react';
+import { useEffect, useState } from 'react';
+import Categories from './body/Categories';
+import jsonCards from '../data/cards.json';
+import jsonCategories from '../data/categories.json';
+
 
 
 function App() {
   // CONECT TO THE BACKEND API/JSON HERE
-
+  const [cards, setCards] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [wallets, setWallets] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [notifications, setNotifications] = useState([]);
   ///////////////////// data definition ////////////////////
-  // cards
-  const cards = [
-    {
-      id: 1,
-      title: "Card 1",
-      description: "Description for Card 1",
-    },
-    {
-      id: 2,
-      title: "Card 2",
-      description: "Description for Card 2",
-    },
-    {
-      id: 3,
-      title: "Card 3",
-      description: "Description for Card 3",
-    },
-  ];
 
+  useEffect(() => {
+    // Fetch data from an API or JSON file
+    setCards(jsonCards);
 
+  }, []);
 
+  useEffect(() => {
+    // Fetch categories data from an API or JSON file
+    setCategories(jsonCategories);
 
-
-
-
-
-
-
-
-
-
+  }, []);
 
   return (
+
     <main className="Dashboard">
 
       <aside className="side-bar">
@@ -54,9 +45,13 @@ function App() {
         </header>
 
         <section className="body">
-          <Body />
+          <Body cards={cards}
+            categories={categories}
+          />
         </section>
+
       </section>
+
     </main>
 
 
@@ -81,4 +76,5 @@ export default App;
 // users
 // notifications
 //////////////////////////////////////////////////////////
+
 

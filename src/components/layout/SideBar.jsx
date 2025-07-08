@@ -4,7 +4,6 @@ import '../../styles/layout/_sideBar.scss';
 function SideBar() {
     return (
         <>
-
             <div className='logo__container'>
                 <img className='logo__side__bar'
                     src="./images/Logo-temp.svg" alt="" />
@@ -28,7 +27,6 @@ function SideBar() {
                     </ul>
                 </div>
             </div>
-
         </>
     )
 }

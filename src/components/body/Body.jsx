@@ -1,38 +1,24 @@
 
 import Cards from './Cards';
 import '../../styles/body/_body.scss';
+import Categories from './Categories';
+import PropTypes from 'prop-types';
 
-function Body() {
+function Body({ cards, categories }) {
+
+
     return (
         <>
             <section className='cards'>
-                <Cards />
+                <Cards cards={cards} />
+            </section>
+
+            <section className='categories'>
+                <Categories categories={categories} />
             </section>
 
             <section className='down'>
                 <article className='a__container'>
-                    <div className='card__chart'>
-                        <div className='card__categories'>
-                            <div className='a__header'>
-                                <div className='a__title-container'>
-                                    <p className='a__title'>% current expenses</p>
-                                </div>
-                            </div>
-                            <div className='card__content'>
-                                <div className='categories__container'>
-                                    <div className='categories__chart'></div>
-                                    <ul className='categories__legend'>
-                                        <li><span className='category__label'></span> Category 1</li>
-                                        <li><span className='category__label'></span> Category 2</li>
-                                        <li><span className='category__label'></span> Category 3</li>
-                                    </ul>
-                                    <div className='categories__button__container'>
-                                        <button className='categories__btn'>Add categories</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </article>
                 <article className='b__container'>
@@ -44,5 +30,10 @@ function Body() {
         </>
     )
 }
+
+Body.propTypes = {
+    cards: PropTypes.array.isRequired,
+    categories: PropTypes.array.isRequired
+};
 
 export default Body;

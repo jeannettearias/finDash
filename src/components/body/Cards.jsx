@@ -1,20 +1,27 @@
 import '../../styles/body/_cards.scss';
+import PropTypes from 'prop-types';
 
-function Cards() {
+function Cards({ cards }) {
+    //define cards data
+
     return (
         <>
-            <div className='person-cards'>
-                <div className='card-user'>
-                    <div className='content-card'>
-                        <div className='content-icon'>
-                        </div>
-                        <div className='content-button'>
-                            <div className='title-content'>
-                                <h4 className='text1-content'>Hola, Antonia!</h4>
-                                <p className='text2-content'>UX/UI Designer</p>
-                                <p className='text3-content'>Sábado 07 de Abril del 2024</p>
+            <article className='person-cards'>
+                <div className='content-card'>
+                    <div className='content-icon'>
+                    </div>
+                    <div className='content-button'>
+                        {cards.map((card, index) => (
+                            <div className="title-content" key={index}>
+                                <ul className='card-user'>
+                                    <li key={card.id} className="content-list">
+                                        <h4 className="text1-content">Hola, {card.user.name}!</h4>
+                                        <span className="text2-content">{card.user.role}</span>
+                                        <span className="text3-content">{card.user.date}</span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
                 <div className='card-current-money'>
@@ -40,9 +47,14 @@ function Cards() {
                         className='card-graphic'
                         src="./images/card-user/card-money/spents/person/Card/graphic.svg" alt="" />
                 </div>
-            </div>
+            </article>
         </>
     )
 }
 
+Cards.propTypes = {
+    cards: PropTypes.array.isRequired
+};
+
 export default Cards;
+

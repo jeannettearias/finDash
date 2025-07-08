@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Food",
+        "percentage": 30
+    },
+    {
+        "id": 2,
+        "name": "Transport",
+        "percentage": 20
+    },
+    {
+        "id": 3,
+        "name": "Utilities",
+        "percentage": 25
+    },
+    {
+        "id": 4,
+        "name": "Entertainment",
+        "percentage": 15
+    },
+    {
+        "id": 5,
+        "name": "Other",
+        "percentage": 10
+    }
+]
