@@ -36,9 +36,10 @@
 
 /* Body below header */
 .body {
-  flex: 1;
-  padding: 20px;
   display: flex;
+  width: 1203px;
+  padding: 20px;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }

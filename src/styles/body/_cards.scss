@@ -1,16 +1,9 @@
-.person-cards {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
-}
-
 .card-user {
   display: flex;
   width: 384px;
   height: 209px;
   padding: 24px;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 34px;

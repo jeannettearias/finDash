@@ -7,8 +7,7 @@ import { useEffect, useState } from 'react';
 import Categories from './body/Categories';
 import jsonCards from '../data/cards.json';
 import jsonCategories from '../data/categories.json';
-
-
+import jsonWallets from '../data/wallets.json';
 
 function App() {
   // CONECT TO THE BACKEND API/JSON HERE
@@ -22,6 +21,7 @@ function App() {
   useEffect(() => {
     // Fetch data from an API or JSON file
     setCards(jsonCards);
+    setWallets(jsonWallets);
 
   }, []);
 
@@ -47,13 +47,12 @@ function App() {
         <section className="body">
           <Body cards={cards}
             categories={categories}
+            wallets={wallets}
           />
         </section>
-
       </section>
 
     </main>
-
 
   )
 }

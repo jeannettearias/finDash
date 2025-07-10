@@ -4,13 +4,15 @@ import '../../styles/body/_body.scss';
 import Categories from './Categories';
 import PropTypes from 'prop-types';
 
-function Body({ cards, categories }) {
+function Body({ cards, categories, wallets }) {
 
 
     return (
         <>
-            <section className='cards'>
-                <Cards cards={cards} />
+            <section className='person-cards'>
+                <Cards cards={cards}
+                    wallets={wallets}
+                />
             </section>
 
             <section className='categories'>
@@ -33,7 +35,25 @@ function Body({ cards, categories }) {
 
 Body.propTypes = {
     cards: PropTypes.array.isRequired,
-    categories: PropTypes.array.isRequired
+    categories: PropTypes.array.isRequired,
+    wallets: PropTypes.array.isRequired
 };
 
 export default Body;
+
+/*
+Dashboard
+    body
+        person/cards
+            Card/User
+                content/icon
+                    button/icon
+                    content/button
+            Card/Current-money
+            Card/Money 
+            Card/Money
+        down
+        top-bar
+
+
+*/

@@ -17,7 +17,7 @@ function Categories({ categories }) {
                             <div className='categories__chart'></div>
                             <ul className='categories__legend'>
                                 {categories.map(category => (
-                                    <li key={category.id}>
+                                    <li id={category.id} key={category.id}>
                                         <span className='category__label'></span>
                                         {category.name}
                                     </li>
