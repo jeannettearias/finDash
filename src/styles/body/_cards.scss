@@ -1,3 +1,10 @@
+.person-cards {
+  display: flex;
+  flex-wrap: wrap; // if you want them to wrap on smaller screens
+  gap: 1rem; // spacing between cards
+  justify-content: center; // or 'space-between' / 'flex-start'
+}
+
 .card-user {
   display: flex;
   width: 384px;
@@ -12,7 +19,7 @@
   background: var(--Primary-Primary, #8534fe);
 }
 
-.content-card {
+.card-user-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;

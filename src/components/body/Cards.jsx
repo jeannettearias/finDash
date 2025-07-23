@@ -1,29 +1,37 @@
 import '../../styles/body/_cards.scss';
 import PropTypes from 'prop-types';
-
+import React, { useState } from 'react';
 
 function Cards({ cards, wallets }) {
     //define cards data
+    const activeCards = cards.filter(card => card.active);
+    console.log(activeCards);
+
 
     return (
         <>
-            {/* USER CARD */}
-            <article className="card-user">
-                <div className="card-user-content">
-                    {cards.map((card) => (
-                        <div className="title-content" key={card.id}>
-                            <ul className="card-user">
-                                <li className="title-content">
-                                    <h4 className="text1-content">Hola, {card.user.name}!</h4>
-                                    <span className="text2-content">{card.user.role}</span>
-                                    <span className="text3-content">{card.user.date}</span>
+            <article className="person-cards">
+                <div className="card-user">
+                    {activeCards.map((card) => (
+                        <div className="card-id" key={card.id}>
+                            <ul className="card-user-content">
+                                <li className="content-icon">
+                                    <img className='content-icon-image' src={card.user.image} alt={card.user.name} />
+                                    <span className="content-icon">{card.user.initials}</span>
+                                </li>
+                                <li className='content-button'>
+                                    <div className="title-content">
+                                        <h4 className='text1-content'>Hola, {card.user.name}!</h4>
+                                        <span className="text2-content">{card.user.role}</span>
+                                        <span className="text3-content">{card.user.last_transaction}</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     ))}
                 </div>
             </article>
-            {/* WALLET CARDS */}
+
             <article>
                 {wallets.map((item) => (
                     <div

@@ -4,7 +4,6 @@ import SideBar from './layout/SIdeBar';
 import Body from './body/body';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import Categories from './body/Categories';
 import jsonCards from '../data/cards.json';
 import jsonCategories from '../data/categories.json';
 import jsonWallets from '../data/wallets.json';

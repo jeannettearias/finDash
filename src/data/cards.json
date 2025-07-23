@@ -4,10 +4,11 @@
         "type": "Credit Card",
         "title": "OpenBank VISA Credit",
         "IBAN": "XXXXXXXXXXXX9007",
+        "active": true,
         "user": {
             "name": "Antonia Mendoza",
             "role": "UX/UI Designer",
-            "date": "Saturday, 07 April 2024"
+            "last_transaction": "Saturday, 07 April 2024"
         }
     },
     {
@@ -15,10 +16,11 @@
         "type": "Debit Card",
         "title": "OpenBank VISA Debit",
         "IBAN": "XXXXXXXXXXXX9008",
+        "active": false,
         "user": {
             "name": "Antonia Mendoza",
             "role": "UX/UI Designer",
-            "date": "Saturday, 07 April 2024"
+            "last_transaction": "Saturday, 07 April 2024"
         }
     },
     {
@@ -26,10 +28,11 @@
         "type": "Credit Card",
         "title": "DIAMOND VISA Credit",
         "IBAN": "XXXXXXXXXXXX9009",
+        "active": true,
         "user": {
             "name": "Antonia Mendoza",
             "role": "UX/UI Designer",
-            "date": "Saturday, 07 April 2024"
+            "last_transaction": "Saturday, 07 April 2024"
         }
     }
 ]
