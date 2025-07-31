@@ -19,7 +19,7 @@
   background: var(--Primary-Primary, #8534fe);
 }
 
-.card-user-content {
+.content-icon {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -27,7 +27,7 @@
   align-self: stretch;
 }
 
-.content-icon {
+.button-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
