@@ -1,7 +1,7 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
 import SideBar from './layout/SIdeBar';
-import Body from './body/body';
+import Body from './body/Body';
 import React from 'react';
 import { useEffect, useState } from 'react';
 import jsonCards from '../data/cards.json';
@@ -50,9 +50,7 @@ function App() {
           />
         </section>
       </section>
-
     </main>
-
   )
 }
 export default App;
