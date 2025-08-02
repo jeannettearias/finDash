@@ -10,7 +10,7 @@
   width: 384px;
   height: 209px;
   padding: 24px;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 34px;
@@ -19,7 +19,7 @@
   background: var(--Primary-Primary, #8534fe);
 }
 
-.content-card {
+.content-icon {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -27,7 +27,7 @@
   align-self: stretch;
 }
 
-.content-icon {
+.button-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -88,6 +88,18 @@
 
   border-radius: var(--Spacing-m, 16px);
 }
+.card-money {
+  display: flex;
+  width: 200px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  border-radius: var(--Spacing-m, 16px);
+  background: #fff;
+}
 
 .card-money1 {
   display: flex;
@@ -139,7 +151,6 @@
 
 .card-text3 {
   align-self: stretch;
-
   color: var(--Success-Success300, #0b7b69);
 
   font-size: 14px;

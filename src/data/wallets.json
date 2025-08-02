@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "type": "incomes",
+        "title": "Monthly incomes",
+        "amount": "1500€",
+        "comparison": "+4% previous 28 days",
+        "image": "./images/card-user/card-money/person/Card/graphic.svg"
+    },
+    {
+        "id": 2,
+        "type": "spendings",
+        "title": "Monthly spendings",
+        "amount": "-350€",
+        "comparison": "-25% previous 07 days",
+        "image": "./images/card-user/card-money/spents/person/Card/graphic.svg"
+    }
+]

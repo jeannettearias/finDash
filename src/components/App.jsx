@@ -1,12 +1,37 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
 import SideBar from './layout/SIdeBar';
-import Body from './body/body';
+import Body from './body/Body';
 import React from 'react';
-
+import { useEffect, useState } from 'react';
+import jsonCards from '../data/cards.json';
+import jsonCategories from '../data/categories.json';
+import jsonWallets from '../data/wallets.json';
 
 function App() {
+  // CONECT TO THE BACKEND API/JSON HERE
+  const [cards, setCards] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [wallets, setWallets] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [notifications, setNotifications] = useState([]);
+  ///////////////////// data definition ////////////////////
+
+  useEffect(() => {
+    // Fetch data from an API or JSON file
+    setCards(jsonCards);
+    setWallets(jsonWallets);
+
+  }, []);
+
+  useEffect(() => {
+    // Fetch categories data from an API or JSON file
+    setCategories(jsonCategories);
+
+  }, []);
+
   return (
+
     <main className="Dashboard">
 
       <aside className="side-bar">
@@ -19,12 +44,13 @@ function App() {
         </header>
 
         <section className="body">
-          <Body />
+          <Body cards={cards}
+            categories={categories}
+            wallets={wallets}
+          />
         </section>
       </section>
     </main>
-
-
   )
 }
 export default App;
@@ -37,4 +63,14 @@ export default App;
 |                |          Body              |
 +----------------+----------------------------+
 */
+
+///////////////////// data definition ////////////////////
+// cards
+// transactions movements
+// categories
+// wallets
+// users
+// notifications
+//////////////////////////////////////////////////////////
+
 
