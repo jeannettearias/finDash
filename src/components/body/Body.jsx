@@ -2,9 +2,10 @@
 import Cards from './Cards';
 import '../../styles/body/_body.scss';
 import Categories from './Categories';
+import Transactions from './Transactions';
 import PropTypes from 'prop-types';
 
-function Body({ cards, categories, wallets }) {
+function Body({ cards, categories, wallets, transactions }) {
 
 
     return (
@@ -12,18 +13,13 @@ function Body({ cards, categories, wallets }) {
             <Cards cards={cards}
                 wallets={wallets} />
 
-            <section className='categories'>
-                <Categories categories={categories} />
-            </section>
-
             <section className='down'>
                 <article className='a__container'>
-
+                    <Categories categories={categories} />
                 </article>
                 <article className='b__container'>
-                    <div className='Card/Time-line/Desk'></div>
-                    <div className='Dropdown/Datatable'></div>
-                    <div className='Card__Products'></div>
+                    <Transactions transactions={transactions} />
+
                 </article>
             </section>
         </>

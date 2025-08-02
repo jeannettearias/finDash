@@ -88,6 +88,18 @@
 
   border-radius: var(--Spacing-m, 16px);
 }
+.card-money {
+  display: flex;
+  width: 200px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  border-radius: var(--Spacing-m, 16px);
+  background: #fff;
+}
 
 .card-money1 {
   display: flex;
