@@ -27,21 +27,11 @@ function Cards({ cards, wallets }) {
             {wallets.map((item) => (
                 <div className={`card-money ${item.type === 'incomes' ? 'card-money1' : 'card-money2'}`} key={item.id}>
                     <div className="content-card-money">
-                        <p className={item.type === 'incomes' ? 'card-text1' : 'card2-text1'}>
-                            {item.title}
-                        </p>
-                        <p className={item.type === 'incomes' ? 'card-text2' : 'card2-text2'}>
-                            {item.amount}
-                        </p>
+                        <p className={item.type === 'incomes' ? 'card-text1' : 'card2-text1'}>{item.title}</p>
+                        <p className={item.type === 'incomes' ? 'card-text2' : 'card2-text2'}>{item.amount}</p>
                     </div>
-                    <p className={item.type === 'incomes' ? 'card-text3' : 'card2-text3'}>
-                        {item.comparison}
-                    </p>
-                    <img
-                        className="card-graphic"
-                        src={item.image}
-                        alt=""
-                    />
+                    <p className={item.type === 'incomes' ? 'card-text3' : 'card2-text3'}>{item.comparison}</p>
+                    <img className="card-graphic" src={item.image} alt="" />
                 </div>
             ))}
         </article>

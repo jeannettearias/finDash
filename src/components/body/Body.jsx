@@ -9,11 +9,8 @@ function Body({ cards, categories, wallets }) {
 
     return (
         <>
-            <section className='person-cards'>
-                <Cards cards={cards}
-                    wallets={wallets}
-                />
-            </section>
+            <Cards cards={cards}
+                wallets={wallets} />
 
             <section className='categories'>
                 <Categories categories={categories} />
