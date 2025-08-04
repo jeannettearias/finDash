@@ -1,8 +1,22 @@
 .person-cards {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  align-items: center;
   gap: 20px;
   align-self: stretch;
+  //mobile first
+  grid-template-columns: 1fr;
+
+  @media (min-width: 680px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: flex-start;
+  }
 }
 
 .card-user {

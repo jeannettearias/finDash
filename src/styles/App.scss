@@ -1,7 +1,7 @@
 .Dashboard {
   display: flex;
   width: 100%;
-  height: 1506px;
+  height: 95rem;
   background: #e5ecf3;
 }
 
@@ -14,6 +14,10 @@
   flex-direction: column;
   align-items: center;
   gap: 47px;
+  position: fixed;
+  z-index: 1000;
+  top: 0; /* Distance from the top of the viewport */
+  left: 0; /* Distance from the left of the viewport */
 
   border-right: 1px solid var(--Secondary-Secondary200, #dae1e7);
   background: #fff;
@@ -34,6 +38,9 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
+
+  margin-left: 130px; /* Makes room for the sidebar */
+  padding: 24px; /* Optional: spacing inside main content */
 }
 
 /* Body below header */
@@ -45,4 +52,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+
+  margin-left: 290px; /* Makes room for the sidebar */
+  padding: 24px; /* Optional: spacing inside main content */
 }
