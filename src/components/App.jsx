@@ -38,10 +38,10 @@ function App() {
         <SideBar />
       </aside>
 
-      <section className="main-content">
-        <header className="header">
+      <div className="top-bar">
+        <section className="bar">
           <Header />
-        </header>
+        </section>
 
         <section className="body">
           <Body cards={cards}
@@ -49,7 +49,7 @@ function App() {
             wallets={wallets}
           />
         </section>
-      </section>
+      </div>
     </main>
   )
 }

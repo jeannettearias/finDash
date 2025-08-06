@@ -1,58 +1,83 @@
 .Dashboard {
   display: flex;
-  width: 100%;
-  height: 95rem;
+  width: 100vw;
+  min-height: 100vh;
   background: #e5ecf3;
 }
 
-/* Sidebar column on the left */
+/* Sidebar */
 .side-bar {
-  display: flex;
-  width: 237px;
-  height: 964px;
-  padding: 44px 24px;
-  flex-direction: column;
-  align-items: center;
-  gap: 47px;
+  width: 240px;
+  min-width: 240px;
+  background: #fff;
+  border-right: 1px solid #dae1e7;
   position: fixed;
-  z-index: 1000;
-  top: 0; /* Distance from the top of the viewport */
-  left: 0; /* Distance from the left of the viewport */
-
-  border-right: 1px solid var(--Secondary-Secondary200, #dae1e7);
-  background: #fff;
-}
-
-/* Main content column on the right */
-.main-content {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
-
-/* Header spans the top of main content */
-.header {
-  display: flex;
-  width: 100%;
-  padding: 20px 32px;
-  justify-content: space-between;
   align-items: center;
-  background: #fff;
-
-  margin-left: 130px; /* Makes room for the sidebar */
-  padding: 24px; /* Optional: spacing inside main content */
+  padding: 44px 0;
 }
 
-/* Body below header */
-.body {
+/* Main content (header + body) */
+.top-bar {
+  margin-left: 240px; // same as sidebar width
+  flex: 1 1 auto;
   display: flex;
-  width: 1203px;
-  max-width: 1500px;
-  padding: 20px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  min-height: 100vh;
+}
 
-  margin-left: 290px; /* Makes room for the sidebar */
-  padding: 24px; /* Optional: spacing inside main content */
+/* Header styles */
+.bar {
+  width: 100%;
+  min-height: 72px;
+  background: #fff;
+  display: flex;
+  align-items: center; // row alignment
+  justify-content: space-between; // or center/left as you wish
+  padding: 0 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* Body styles */
+.body {
+  flex: 1 1 auto;
+  padding: 32px;
+  background: #e5ecf3;
+  overflow: auto;
+}
+
+/* Responsive: Adjust as needed */
+@media (max-width: 900px) {
+  .side-bar {
+    width: 64px;
+    min-width: 64px;
+    padding: 16px 0;
+  }
+  .top-bar {
+    margin-left: 64px;
+  }
+}
+@media (max-width: 600px) {
+  .side-bar {
+    display: none;
+  }
+  .top-bar {
+    margin-left: 0;
+  }
+  .bar {
+    min-height: 56px;
+    padding: 0 12px;
+  }
+  .body {
+    padding: 12px;
+  }
 }
