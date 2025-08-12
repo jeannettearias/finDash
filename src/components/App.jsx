@@ -7,12 +7,15 @@ import { useEffect, useState } from 'react';
 import jsonCards from '../data/cards.json';
 import jsonCategories from '../data/categories.json';
 import jsonWallets from '../data/wallets.json';
+import jsonTransactions from '../data/transactions.json';
 
 function App() {
   // CONECT TO THE BACKEND API/JSON HERE
   const [cards, setCards] = useState([]);
   const [categories, setCategories] = useState([]);
   const [wallets, setWallets] = useState([]);
+  const [transactions, setTransactions] = useState([]);
+  const [charts, setCharts] = useState([]);
   const [users, setUsers] = useState([]);
   const [notifications, setNotifications] = useState([]);
   ///////////////////// data definition ////////////////////
@@ -22,11 +25,13 @@ function App() {
     setCards(jsonCards);
     setWallets(jsonWallets);
 
+
   }, []);
 
   useEffect(() => {
     // Fetch categories data from an API or JSON file
     setCategories(jsonCategories);
+    setTransactions(jsonTransactions);
 
   }, []);
 
@@ -47,6 +52,8 @@ function App() {
           <Body cards={cards}
             categories={categories}
             wallets={wallets}
+            transactions={transactions}
+            charts={charts}
           />
         </section>
       </div>

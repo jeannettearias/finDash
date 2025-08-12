@@ -1,0 +1,44 @@
+[
+    {
+        "spend_type": "groceries",
+        "spend_date": "2023-01-01",
+        "category_label": "Food",
+        "value": 100,
+        "currency": "USD"
+    },
+    {
+        "spend_type": "transport",
+        "spend_date": "2023-01-02",
+        "category_label": "Travel",
+        "value": 50,
+        "currency": "USD"
+    },
+    {
+        "spend_type": "entertainment",
+        "spend_date": "2023-02-23",
+        "category_label": "Leisure",
+        "value": 75,
+        "currency": "USD"
+    },
+    {
+        "spend_type": "utilities",
+        "spend_date": "2023-03-04",
+        "category_label": "Bills",
+        "value": 120,
+        "currency": "USD"
+    },
+    {
+        "spend_type": "healthcare",
+        "spend_date": "2023-03-05",
+        "category_label": "Health",
+        "value": 200,
+        "currency": "USD"
+    },
+    {
+        "spend_type": "subscriptions",
+        "spend_date": "2023-03-06",
+        "category_label": "Entertainment",
+        "value": 15,
+        "currency": "USD"
+    }
+]
