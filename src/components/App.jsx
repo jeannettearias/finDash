@@ -54,6 +54,7 @@ function App() {
             wallets={wallets}
             transactions={transactions}
             charts={charts}
+
           />
         </section>
       </div>

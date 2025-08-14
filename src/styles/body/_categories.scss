@@ -63,6 +63,10 @@
 }
 
 .a__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   color: var(--Foreground-Medium, #404040);
   font-size: 16px;
   font-style: normal;
@@ -127,4 +131,58 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
+}
+
+.Card-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  border-radius: var(--Spacing-m, 16px);
+  background: #fff;
+}
+
+.card__header {
+  display: flex;
+  height: 52px;
+  min-height: 52px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 1px solid var(--Secondary-Secondary100, #f0f3f5);
+  background: #fff;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.card__footer {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+
+  border-radius: 0px 0px var(--Spacing-m, 16px) var(--Spacing-m, 16px);
+  background: #fff;
+}
+
+.card__progress__bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+
+  .card__number {
+  }
 }
