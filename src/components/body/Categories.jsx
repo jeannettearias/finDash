@@ -7,11 +7,11 @@ function Categories({ categories }) {
         <>
             <div className='Card'>
                 <div className='card__categories'>
-                    <div className='card__header'>
+                    <header className='card__header'>
                         <div className='a__title-container'>
                             <h3 className='a__title'>% current expenses</h3>
                         </div>
-                    </div>
+                    </header>
                     <div className='card__content'>
                         <div>
                             <div className="persons">
@@ -32,32 +32,36 @@ function Categories({ categories }) {
                     </div>
                 </div>
             </div>
+
             <div className='Card-chart'>
-                <div>
-                    <header className='card__header'>
-                        <h3 className='card__title'>Expenses by Category</h3>
-                    </header>
-                    <div className='card__footer'>
-                        <div className="card__progress__bar" alt="">
-                            <div className="progress__bar"></div>
-                            <div className="card__number"></div>
+                <header className='card_chart__header'>
+                    <h3 className='card__title'>Expenses by Category</h3>
+                </header>
+                <div className='card__footer'>
+                    <div className="card__progress__bar" alt="">
+                        <div className="progress__bar"></div>
+                        <div className="card__number"></div>
+                    </div>
+                    <div className="card__content">
+                        <div className="card__content__money">
+                            <div className="card__content__donut"></div>
+                            <div className="card__content__items"></div>
                         </div>
-
-
-                        <div className="card__content">
-                            <div className="card__content__money">
-                                <div className="card__content__donut"></div>
-                                <div className="card__content__items"></div>
-                            </div>
-                        </div>
-                        <div >
-                            <label htmlFor="">Select another category</label>
-                            <select className="card__select"
-                                name="category" id="category"></select>
+                    </div>
+                    <div className="label__category__container">
+                        <label className="label__category">Select another category</label>
+                        <div className="dropdown__container">
+                            <select className="category__dropdown"
+                                name="category" id="category">{categories.map(category => (
+                                    <option key={category.id} value={category.id}>
+                                        {category.name}
+                                    </option>
+                                ))}</select>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 }
