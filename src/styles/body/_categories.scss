@@ -209,12 +209,28 @@
     border-radius: 16px;
     background: var(--Success-Success200, #15b097);
   }
+}
+.progress__bar__number {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 
-  .progress__bar__number {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
+  .min_amount_info {
+    color: var(--Secondary-Secondary900, #4a5e6d);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.326px; /* 89.535% */
+  }
+  .max_amount_info {
+    color: var(--Secondary-Secondary900, #4a5e6d);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.326px; /* 89.535% */
   }
 }
 
