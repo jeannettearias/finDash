@@ -38,9 +38,14 @@ function Categories({ categories }) {
                     <h3 className='card__title'>Expenses by Category</h3>
                 </header>
                 <div className='card__footer'>
-                    <div className="card__progress__bar" alt="">
-                        <div className="progress__bar"></div>
-                        <div className="card__number"></div>
+                    <div className="progress__bar__container" alt="">
+                        <div className="progress__bar">
+                            <div className="progress__bar__fill"></div>
+                        </div>
+                        <div className="progress__bar__number">
+                            <p className="min_amount_info">100€</p>
+                            <p className="max_amount_info">500€</p>
+                        </div>
                     </div>
                     <div className="card__content">
                         <div className="card__content__money">
