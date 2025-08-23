@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import '../../styles/body/_categories.scss';
 
-function Categories({ categories }) {
+function Categories({ categories, transactions }) {
 
     return (
         <>
@@ -50,7 +50,17 @@ function Categories({ categories }) {
                     <div className="chart__content">
                         <div className="chart__content__money">
                             <div className="chart__donut"></div>
-                            <div className="chart__items"></div>
+                            <div className="items__container">
+                                <ul className="chart__items">
+                                    {transactions.map(transaction => (
+                                        <li className="transaction__item"
+                                            key={transaction.id} >
+                                            <span className="chart__item__label">{transaction.spend_type}</span>
+                                            <span className="chart__item__value">{transaction.value}{transaction.currency}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="label__category__container">

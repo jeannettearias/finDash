@@ -1,44 +1,44 @@
 [
     {
-        "spend_type": "groceries",
+        "spend_type": "Groceries",
         "spend_date": "2023-01-01",
-        "category_label": "Food",
+        "category_name": "Food",
         "value": 100,
-        "currency": "USD"
+        "currency": "€"
     },
     {
-        "spend_type": "transport",
+        "spend_type": "Restaurant",
         "spend_date": "2023-01-02",
-        "category_label": "Travel",
+        "category_name": "Food",
         "value": 50,
-        "currency": "USD"
+        "currency": "€"
     },
     {
-        "spend_type": "entertainment",
+        "spend_type": "Restaurant",
         "spend_date": "2023-02-23",
-        "category_label": "Leisure",
+        "category_name": "Food",
         "value": 75,
-        "currency": "USD"
+        "currency": "€"
     },
     {
-        "spend_type": "utilities",
+        "spend_type": "Groceries",
         "spend_date": "2023-03-04",
-        "category_label": "Bills",
+        "category_name": "Bills",
         "value": 120,
-        "currency": "USD"
+        "currency": "€"
     },
     {
-        "spend_type": "healthcare",
+        "spend_type": "Healthcare",
         "spend_date": "2023-03-05",
-        "category_label": "Health",
+        "category_name": "Health",
         "value": 200,
-        "currency": "USD"
+        "currency": "€"
     },
     {
-        "spend_type": "subscriptions",
+        "spend_type": "Subscriptions",
         "spend_date": "2023-03-06",
-        "category_label": "Entertainment",
+        "category_name": "Entertainment",
         "value": 15,
-        "currency": "USD"
+        "currency": "€"
     }
 ]

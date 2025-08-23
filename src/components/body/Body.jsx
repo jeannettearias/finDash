@@ -16,7 +16,8 @@ function Body({ cards, categories, wallets, transactions, charts }) {
 
             <section className='down'>
                 <article className='a__container'>
-                    <Categories categories={categories} />
+                    <Categories categories={categories}
+                        transactions={transactions} />
                     <Charts charts={charts} />
                 </article>
                 <article className='b__container'>
