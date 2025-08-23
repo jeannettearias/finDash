@@ -47,10 +47,10 @@ function Categories({ categories }) {
                             <p className="max_amount_info">500€</p>
                         </div>
                     </div>
-                    <div className="card__content">
-                        <div className="card__content__money">
-                            <div className="card__content__donut"></div>
-                            <div className="card__content__items"></div>
+                    <div className="chart__content">
+                        <div className="chart__content__money">
+                            <div className="chart__donut"></div>
+                            <div className="chart__items"></div>
                         </div>
                     </div>
                     <div className="label__category__container">
