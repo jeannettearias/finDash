@@ -11,6 +11,8 @@ function Charts({ categories, transactions }) {
         setSelectedCategory(event.target.value);
     };
 
+    const selectedCategoryObj = categories.find(cat => cat.id === selectedCategory);
+
     return (
         <div className='Card-chart'>
             <header className='card_chart__header'>
@@ -29,28 +31,29 @@ function Charts({ categories, transactions }) {
                 <div className="chart__content">
                     <div className="chart__content__money">
                         <div className="chart__donut">
-                            <div className='chart__label' htmlFor="">{transactions.map((transaction, idx) =>
-                                <label className="chart__label_content"
-                                    key={transaction.id || `${transaction.category_name}-${idx}`}>
-                                    {transaction.category_name}
-                                    <span className="chart__label__value">
-                                        {transaction.value}{transaction.currency}
-                                    </span>
-                                </label>
-
-                            )}</div>
+                            <div className='chart__label'>
+                                {selectedCategoryObj}
+                            </div>
                         </div>
                         <div className="items__container">
-                            <ul className="chart__items">
-                                {transactions.map(transaction => (
-                                    <li className="transaction__item"
-                                        key={transaction.id} >
-                                        <div className="item__labels">
-                                            <label className="chart__item__label">{transaction.spend_type}</label>
-                                            <label className="chart__item__value">{transaction.value}{transaction.currency}</label>
-                                        </div>
-                                    </li>
-                                ))}</ul>
+                            <div className="chart__items">
+                                <ul className="chart__list">
+
+                                    {transactions.map((transaction, idx) => (
+                                        <li className="item__label"
+                                            key={transaction.id || `tx-${transaction.category_name}-${idx}`}
+                                        >
+                                            <span className="text__label">{transaction.spend_type}</span>
+                                            <span className="text__label">
+                                                {transaction.value}
+                                                {transaction.currency}
+                                            </span>
+                                        </li>
+
+                                    ))}
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,10 +70,11 @@ function Charts({ categories, transactions }) {
                             ))}</select>
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 }
+
 Charts.propTypes = {
     categories: PropTypes.array.isRequired,
     transactions: PropTypes.array.isRequired

@@ -4,6 +4,7 @@
   align-items: center;
   align-self: stretch;
 }
+
 .chart__content__money {
   display: flex;
   flex-direction: column;
@@ -29,3 +30,38 @@
   flex-direction: column;
   align-items: center;
 }
+
+/////////////// chart content ////////////
+///
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.chart__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  .item__label {
+    display: flex;
+    justify-content: space-between; // pushes left/right apart
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee; // optional divider
+  }
+
+  .text__label {
+    font-size: 0.9rem;
+    color: #333;
+  }
+}
+
+///////////////// END ///////////////////////
