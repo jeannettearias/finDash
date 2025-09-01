@@ -4,7 +4,7 @@
         "type": "Credit Card",
         "title": "OpenBank VISA Credit",
         "IBAN": "XXXXXXXXXXXX9007",
-        "active": true,
+        "active": false,
         "image": "./images/card-user/person/Card/content/button/image.png",
         "user": {
             "name": "Antonia Mendoza",
@@ -17,7 +17,7 @@
         "type": "Debit Card",
         "title": "OpenBank VISA Debit",
         "IBAN": "XXXXXXXXXXXX9008",
-        "active": false,
+        "active": true,
         "image": "/images/card-user/person/Card/content/button/image.png",
         "user": {
             "name": "Antonia Mendoza",

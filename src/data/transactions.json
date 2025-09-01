@@ -1,0 +1,44 @@
+[
+    {
+        "spend_type": "Groceries",
+        "spend_date": "2023-01-01",
+        "category_name": "Food",
+        "value": 100,
+        "currency": "€"
+    },
+    {
+        "spend_type": "Restaurant",
+        "spend_date": "2023-01-02",
+        "category_name": "Food",
+        "value": 50,
+        "currency": "€"
+    },
+    {
+        "spend_type": "Restaurant",
+        "spend_date": "2023-02-23",
+        "category_name": "Food",
+        "value": 75,
+        "currency": "€"
+    },
+    {
+        "spend_type": "Groceries",
+        "spend_date": "2023-03-04",
+        "category_name": "Bills",
+        "value": 120,
+        "currency": "€"
+    },
+    {
+        "spend_type": "Healthcare",
+        "spend_date": "2023-03-05",
+        "category_name": "Health",
+        "value": 200,
+        "currency": "€"
+    },
+    {
+        "spend_type": "Subscriptions",
+        "spend_date": "2023-03-06",
+        "category_name": "Entertainment",
+        "value": 15,
+        "currency": "€"
+    }
+]

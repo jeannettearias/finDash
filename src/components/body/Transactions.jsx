@@ -1,7 +1,7 @@
 import '../../styles/body/_transactions.scss';
-import PropTypes from 'prop-types';
 
-function Transactions({ transactions }) {
+
+function Transactions() {
 
     return (
         <>
@@ -14,10 +14,5 @@ function Transactions({ transactions }) {
         </>
     );
 }
-
-Transactions.propTypes = {
-    transactions: PropTypes.array.isRequired
-};
-
 
 export default Transactions;
