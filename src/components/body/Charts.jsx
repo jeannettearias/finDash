@@ -36,40 +36,37 @@ function Charts({ categories, transactions }) {
                             </div>
                         </div>
                         <div className="items__container">
-                            <div className="chart__items">
-                                <ul className="chart__list">
+                            <ul className="chart__list">
+                                {transactions.map((transaction, idx) => (
+                                    <li className="item__label"
+                                        key={transaction.id || `tx-${transaction.category_name}-${idx}`}
+                                    >
+                                        <span className="text__label">{transaction.spend_type}</span>
+                                        <span className="text__label">
+                                            {transaction.value}
+                                            {transaction.currency}
+                                        </span>
+                                    </li>
 
-                                    {transactions.map((transaction, idx) => (
-                                        <li className="item__label"
-                                            key={transaction.id || `tx-${transaction.category_name}-${idx}`}
-                                        >
-                                            <span className="text__label">{transaction.spend_type}</span>
-                                            <span className="text__label">
-                                                {transaction.value}
-                                                {transaction.currency}
-                                            </span>
-                                        </li>
+                                ))}
 
-                                    ))}
+                            </ul>
 
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="label__category__container">
-                    <label className="label__category">Select another category</label>
-                    <div className="dropdown__container">
-                        <select className="category__dropdown"
-                            value={selectedCategory}
-                            onChange={handleCategoryChange}
-                            name="category" id="category">{categories.map(category => (
-                                <option key={category.id} value={category.id}>
-                                    {category.name}
-                                </option>
-                            ))}</select>
-                    </div>
+                <div className="select__container">
+                    <label className="select__label">Select another category</label>
+                    <select className="category__dropdown"
+                        value={selectedCategory}
+                        onChange={handleCategoryChange}
+                        name="category" id="category">{categories.map(category => (
+                            <option key={category.id} value={category.id}>
+                                {category.name}
+                            </option>
+                        ))}</select>
                 </div>
+
             </div>
         </div>
     );
