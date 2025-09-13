@@ -3,15 +3,20 @@ import '../../styles/body/_charts.scss';
 import PropTypes from 'prop-types';
 
 function Charts({ categories, transactions }) {
+    //start with the first categoryy if available
     const [selectedCategory, setSelectedCategory] = useState(
         categories.length > 0 ? categories[0].id : ''
     );
 
-    const handleCategoryChange = (event) => {
-        setSelectedCategory(event.target.value);
+    const handleCategoryChange = (e) => {
+        setSelectedCategory(e.target.value);
+
     };
 
+    //get the selected category object (optional)
     const selectedCategoryObj = categories.find(cat => cat.id === selectedCategory);
+    console.log(selectedCategoryObj);
+
 
     return (
         <div className='Card-chart'>
@@ -32,7 +37,7 @@ function Charts({ categories, transactions }) {
                     <div className="chart__content__money">
                         <div className="chart__donut">
                             <div className='chart__label'>
-                                {selectedCategoryObj}
+                                {selectedCategoryObj ? selectedCategoryObj.name : 'No category selected'}
                             </div>
                         </div>
                         <div className="items__container">
@@ -47,11 +52,8 @@ function Charts({ categories, transactions }) {
                                             {transaction.currency}
                                         </span>
                                     </li>
-
                                 ))}
-
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -60,21 +62,21 @@ function Charts({ categories, transactions }) {
                     <select className="category__dropdown"
                         value={selectedCategory}
                         onChange={handleCategoryChange}
-                        name="category" id="category">{categories.map(category => (
-                            <option key={category.id} value={category.id}>
-                                {category.name}
+                    >
+                        {categories.map(cat => (
+                            <option key={cat.id} value={cat.id}>
+                                {cat.name}
                             </option>
-                        ))}</select>
+                        ))}
+                    </select>
                 </div>
-
             </div>
         </div>
     );
 }
-
 Charts.propTypes = {
     categories: PropTypes.array.isRequired,
-    transactions: PropTypes.array.isRequired
+    transactions: PropTypes.array.isRequired,
 };
 
 export default Charts;
